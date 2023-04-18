@@ -1,0 +1,66 @@
+#app {
+    width: 320px;
+}
+
+$colorBorder: #ccc;
+
+input {
+    width: 100%;
+}
+
+hr {
+    border: 1px solid $colorBorder;
+}
+
+input,
+select {
+    border: 1px solid $colorBorder;
+}
+
+.btn {
+    border: 1px solid $colorBorder;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: $colorBorder;
+    }
+}
+
+.list-group {
+    margin-left: 0;
+    padding-left: 0;
+    .list-group-item {
+        list-style-type: none;
+    }
+}
+
+.timezone-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .timezone-name {
+        flex: 2 1 0;
+    }
+    .timezone-sign {
+        flex: 1 1 0;
+        text-align: right;
+        select {
+            height: 21px;
+        }
+    }
+    .timezone-hours {
+        flex: 1 1 0;
+
+        .remove-timezone {
+            float: right;
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+
+#save-timezones {
+    float: right;
+}
